@@ -40,12 +40,17 @@
 			 android:layout_marginBottom="-1dp" android:layout_alignBottom="@+id/repair_room"
 			 android:prompt="@string/repair_building"
 			 android:spinnerMode="dropdown"/>
+	
 	<Button
-		android:text="@string/repair_submit"
-		android:layout_width="212dp"
-		android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_marginStart="96dp"
-		android:layout_alignParentBottom="true" android:layout_marginBottom="153dp" android:id="@+id/button" android:layout_centerHorizontal="true"
-		android:onClick="createRequest"
-		android:background="@color/colorIcon"/>
+			android:text="@string/repair_submit"
+			android:layout_width="212dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:layout_marginStart="96dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="153dp"
+			android:id="@+id/button_submit"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorIcon"/>
 
-</RelativeLayout>
+</FrameLayout>

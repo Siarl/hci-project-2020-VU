@@ -7,13 +7,13 @@
     
     <fragment
             android:id="@+id/nav_repair_new"
-            android:name="nl.vanrsmln.wilkin.hci2020.NewRepairFragment"
+            android:name="nl.vanrsmln.wilkin.hci2020.repairs.NewRepairFragment"
             android:label="@string/repair_new"
             tools:layout="@layout/fragment_new_repair"/>
     
     <fragment
             android:id="@+id/nav_repair_current"
-            android:name="nl.vanrsmln.wilkin.hci2020.CurrentRepairFragment"
+            android:name="nl.vanrsmln.wilkin.hci2020.repairs.CurrentRepairFragment"
             android:label="@string/repair_current"
             tools:layout="@layout/fragment_current_repair"/>
     
