@@ -2,19 +2,19 @@ package nl.vanrsmln.wilkin.hci2020;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import nl.vanrsmln.wilkin.hci2020.repairs.CurrentRepairFragment;
+import nl.vanrsmln.wilkin.hci2020.repairs.NewRepairFragment;
 
 public class RepairActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 

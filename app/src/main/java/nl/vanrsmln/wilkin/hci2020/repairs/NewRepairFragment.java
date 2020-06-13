@@ -1,18 +1,19 @@
-package nl.vanrsmln.wilkin.hci2020;
+package nl.vanrsmln.wilkin.hci2020.repairs;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import nl.vanrsmln.wilkin.hci2020.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CurrentRepairFragment#newInstance} factory method to
+ * Use the {@link NewRepairFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CurrentRepairFragment extends Fragment {
+public class NewRepairFragment extends Fragment {
 	// TODO: Rename parameter arguments, choose names that match
 	// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 	private static final String ARG_PARAM1 = "param1";
@@ -22,7 +23,7 @@ public class CurrentRepairFragment extends Fragment {
 	private String mParam1;
 	private String mParam2;
 
-	public CurrentRepairFragment() {
+	public NewRepairFragment() {
 		// Required empty public constructor
 	}
 
@@ -32,11 +33,11 @@ public class CurrentRepairFragment extends Fragment {
 	 *
 	 * @param param1 Parameter 1.
 	 * @param param2 Parameter 2.
-	 * @return A new instance of fragment CurrentRepairFragment.
+	 * @return A new instance of fragment NewRepairFragment.
 	 */
 	// TODO: Rename and change types and number of parameters
-	public static CurrentRepairFragment newInstance(String param1, String param2) {
-		CurrentRepairFragment fragment = new CurrentRepairFragment();
+	public static NewRepairFragment newInstance(String param1, String param2) {
+		NewRepairFragment fragment = new NewRepairFragment();
 		Bundle args = new Bundle();
 		args.putString(ARG_PARAM1, param1);
 		args.putString(ARG_PARAM2, param2);
@@ -57,6 +58,6 @@ public class CurrentRepairFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_current_repair, container, false);
+		return inflater.inflate(R.layout.fragment_new_repair, container, false);
 	}
 }
