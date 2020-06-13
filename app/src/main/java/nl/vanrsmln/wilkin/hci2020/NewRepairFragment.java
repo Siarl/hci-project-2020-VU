@@ -1,6 +1,8 @@
 package nl.vanrsmln.wilkin.hci2020;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;

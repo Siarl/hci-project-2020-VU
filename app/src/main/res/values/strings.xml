@@ -3,8 +3,15 @@
 	<string name="title_home">Home</string>
 	<string name="title_dashboard">Dashboard</string>
 	<string name="title_notifications">Notifications</string>
+
+	<!--Repair Requests-->
 	<string name="repair_new">New Repair Request</string>
 	<string name="repair_current">Current Requests</string>
+	<string name="repair_title">Title</string>
+	<string name="repair_description">Short Description of Problem</string>
+	<string name="repair_building">Building</string>
+	<string name="repair_room">Room Number</string>
+	<string name="repair_submit">Submit Repair Request</string>
 
 	<!-- TODO: Remove or change this placeholder text -->
 	<string name="hello_blank_fragment">Hello blank fragment</string>
