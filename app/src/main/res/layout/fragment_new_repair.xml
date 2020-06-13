@@ -3,11 +3,49 @@
 			 xmlns:tools="http://schemas.android.com/tools"
 			 android:layout_width="match_parent"
 			 android:layout_height="match_parent"
-			 tools:context=".NewRepairFragment">
-	
+			 tools:context=".repairs.NewRepairFragment">
+
+	<EditText
+		android:layout_width="324dp"
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:gravity="start|top"
+		android:ems="10"
+		android:id="@+id/repair_description" android:text="@string/repair_description" android:layout_alignParentStart="true"
+		android:layout_marginStart="38dp" android:layout_alignParentBottom="true" android:layout_marginBottom="377dp" android:layout_marginTop="31dp"
+		android:layout_below="@+id/repair_title" android:layout_marginEnd="1dp" android:layout_alignEnd="@+id/repair_title"
+		android:layout_centerHorizontal="true"/>
+	<EditText
+		android:inputType="textPersonName"
+		android:text="@string/repair_title"
+		android:ems="10"
+		android:id="@+id/repair_title"
+		android:layout_gravity=""
+		android:layout_height="wrap_content"
+		android:layout_width="324dp" android:layout_alignParentStart="true" android:layout_marginStart="40dp"
+		android:layout_alignParentTop="true" android:layout_marginTop="226dp" android:layout_centerHorizontal="true"/>
+	<EditText
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:text="@string/repair_room"
+		android:ems="10"
+		android:id="@+id/repair_room" android:layout_marginEnd="0dp" android:layout_alignParentBottom="true"
+		android:layout_marginBottom="302dp" android:layout_marginStart="175dp" android:layout_alignStart="@+id/repair_description"
+		android:layout_alignEnd="@+id/repair_description" android:layout_alignTop="@+id/repair_description" android:layout_marginTop="82dp"/>
+
+	<Spinner android:id="@+id/spinner_buildings"
+			 android:layout_width="141dp"
+			 android:layout_height="41dp" android:layout_alignParentStart="true" android:layout_marginStart="40dp"
+			 android:layout_marginBottom="-1dp" android:layout_alignBottom="@+id/repair_room"
+			 android:prompt="@string/repair_building"
+			 android:spinnerMode="dropdown"/>
 	<Button
-			android:text="Button"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/button"/>
-</FrameLayout>
+		android:text="@string/repair_submit"
+		android:layout_width="212dp"
+		android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_marginStart="96dp"
+		android:layout_alignParentBottom="true" android:layout_marginBottom="153dp" android:id="@+id/button" android:layout_centerHorizontal="true"
+		android:onClick="createRequest"
+		android:background="@color/colorIcon"/>
+
+</RelativeLayout>
