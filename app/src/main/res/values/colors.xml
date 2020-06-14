@@ -3,4 +3,15 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+	<!---Menu buttons color schemes-->
+	<color name="button_red">#E0281A</color>
+	<color name="button_purple">#955AE8</color>
+	<color name="button_green">#6DE85A</color>
+	<color name="button_yellow">#E0BC36</color>
+	<color name="button_blue">#435AE8</color>
+	<color name="button_rust">#E87843</color>
+	<color name="button_turq">#52D1A2</color>
+	<color name="button_light_rust">#D1A947</color>
+
 </resources>
