@@ -35,10 +35,13 @@
 			android:backgroundTint="@color/button_yellow">
 
 			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:src="@drawable/ic_local_dining_white_24dp"
-				android:padding="20dp"/>
+				style="@style/menu_icons"
+				android:src="@drawable/ic_local_dining_white_24dp"/>
+
+			<TextView
+				android:paddingBottom="8dp"
+				style="@style/menu_text"
+				android:text="@string/order_lunch"/>
 
 		</androidx.cardview.widget.CardView>
 
@@ -55,10 +58,13 @@
 			app:cardCornerRadius="8dp">
 
 			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:src="@drawable/ic_place_white_24dp"
-				android:padding="20dp"/>
+				style="@style/menu_icons"
+				android:src="@drawable/ic_place_white_24dp"/>
+
+			<TextView
+				android:paddingBottom="8dp"
+				style="@style/menu_text"
+				android:text="@string/menu_navigation"/>
 
 		</androidx.cardview.widget.CardView>
 
@@ -75,10 +81,13 @@
 			app:cardCornerRadius="8dp">
 
 			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:src="@drawable/ic_build_white_24dp"
-				android:padding="20dp"/>
+				style="@style/menu_icons"
+				android:src="@drawable/ic_build_white_24dp"/>
+
+			<TextView
+				android:paddingBottom="8dp"
+				style="@style/menu_text"
+				android:text="@string/menu_repairs"/>
 
 
 		</androidx.cardview.widget.CardView>
@@ -96,10 +105,13 @@
 			app:cardCornerRadius="8dp">
 
 			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:src="@drawable/ic_notifications_active_white_24dp"
-				android:padding="20dp"/>
+				android:paddingBottom="8dp"
+				style="@style/menu_icons"
+				android:src="@drawable/ic_notifications_active_white_24dp"/>
+
+			<TextView
+				style="@style/menu_text"
+				android:text="@string/menu_security"/>
 
 		</androidx.cardview.widget.CardView>
 
@@ -117,14 +129,17 @@
 			app:cardCornerRadius="8dp">
 
 			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:src="@drawable/ic_today_white_24dp"
-				android:padding="20dp"/>
+				android:paddingBottom="8dp"
+				style="@style/menu_icons"
+				android:src="@drawable/ic_today_white_24dp"/>
+
+			<TextView
+				style="@style/menu_text"
+				android:text="@string/menu_schedule"/>
 
 		</androidx.cardview.widget.CardView>
 
-		<androidx.cardview.widget.CardView
+		<!--androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -166,7 +181,7 @@
 			android:backgroundTint="@color/button_light_rust"
 			app:cardCornerRadius="8dp">
 
-		</androidx.cardview.widget.CardView>
+		</androidx.cardview.widget.CardView-->
 	</GridLayout>
 
 </ScrollView>
