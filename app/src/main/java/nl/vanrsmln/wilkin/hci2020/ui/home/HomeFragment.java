@@ -31,9 +31,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             }
         });
         CardView card = root.findViewById(R.id.associations_button);
-        card.setOnClickListener(this);
         CardView schedule = root.findViewById(R.id.schedule_button);
+        CardView lunch = root.findViewById(R.id.lunch_button);
+        CardView navigation = root.findViewById(R.id.navigation_button);
+        CardView repair = root.findViewById(R.id.repair_button);
+        CardView security = root.findViewById(R.id.security_button);
+
+		card.setOnClickListener(this);
         schedule.setOnClickListener(this);
+        security.setOnClickListener(this);
+        navigation.setOnClickListener(this);
         return root;
     }
 
@@ -42,6 +49,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 		switch(v.getId()) {
 			case R.id.associations_button:
 				startActivity(new Intent(getActivity(), AssociationsActivity.class));
+				break;
+			case R.id.security_button:
+			case R.id.navigation_button:
+				Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 				break;
 		}
 	}
