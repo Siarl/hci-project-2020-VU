@@ -1,5 +1,6 @@
 package nl.vanrsmln.wilkin.hci2020.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import nl.vanrsmln.wilkin.hci2020.AssociationsActivity;
 import nl.vanrsmln.wilkin.hci2020.R;
 
 public class HomeFragment extends Fragment {
