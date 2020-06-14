@@ -13,17 +13,15 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import com.google.android.material.snackbar.Snackbar;
 import nl.vanrsmln.wilkin.hci2020.AssociationsActivity;
 import nl.vanrsmln.wilkin.hci2020.R;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    private HomeViewModel homeViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
+	public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
+		HomeViewModel homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final GridLayout gridLayout = root.findViewById(R.id.home_cards);
         homeViewModel.getText().observe(this, new Observer<String>() {
@@ -33,12 +31,18 @@ public class HomeFragment extends Fragment {
             }
         });
         CardView card = root.findViewById(R.id.associations_button);
-        card.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(new Intent(getActivity(), AssociationsActivity.class));
-			}
-		});
+        card.setOnClickListener(this);
+        CardView schedule = root.findViewById(R.id.schedule_button);
+        schedule.setOnClickListener(this);
         return root;
     }
+
+	@Override
+	public void onClick(View v) {
+		switch(v.getId()) {
+			case R.id.associations_button:
+				startActivity(new Intent(getActivity(), AssociationsActivity.class));
+				break;
+		}
+	}
 }

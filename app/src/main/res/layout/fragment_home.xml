@@ -31,6 +31,8 @@
 			android:layout_marginRight="16dp"
 			android:layout_marginTop="16dp"
 			app:cardElevation="3dp"
+			android:id="@+id/lunch_button"
+			android:focusable="true"
 			app:cardCornerRadius="8dp"
 			android:backgroundTint="@color/button_yellow">
 
@@ -54,6 +56,7 @@
 			android:layout_marginRight="16dp"
 			android:layout_marginLeft="16dp"
 			app:cardElevation="8dp"
+			android:id="@+id/navigation_button"
 			android:backgroundTint="@color/button_green"
 			app:cardCornerRadius="8dp">
 
@@ -77,6 +80,8 @@
 			android:layout_marginRight="16dp"
 			android:layout_marginLeft="16dp"
 			app:cardElevation="8dp"
+			android:focusable="true"
+			android:id="@+id/repair_button"
 			android:backgroundTint="@color/button_purple"
 			app:cardCornerRadius="8dp">
 
@@ -101,6 +106,8 @@
 			android:layout_marginRight="16dp"
 			android:layout_marginLeft="16dp"
 			app:cardElevation="8dp"
+			android:id="@+id/security_button"
+			android:focusable="true"
 			android:backgroundTint="@color/button_red"
 			app:cardCornerRadius="8dp">
 
@@ -126,6 +133,7 @@
 			android:layout_marginLeft="16dp"
 			android:layout_marginTop="16dp"
 			app:cardElevation="8dp"
+			android:id="@+id/schedule_button"
 			android:backgroundTint="@color/button_blue"
 			app:cardCornerRadius="8dp">
 

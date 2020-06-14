@@ -44,7 +44,7 @@ public class AssociationsAdapter extends RecyclerView.Adapter<AssociationsAdapte
 			itemLogo = (ImageView)itemView.findViewById(R.id.association_logo);
 			itemView.setOnClickListener((v) -> {
 				int position = getAdapterPosition();
-				Snackbar.make(v, "Click detected", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+				Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 			});
 		}
 	}
