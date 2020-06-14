@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/associations_cards"
+	card_view:cardCornerRadius="3dp"
+	card_view:cardElevation="3dp"
+	card_view:contentPadding="4dp"
+	android:clickable="true"
+	android:layout_margin="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:focusable="true">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:paddingBottom="15px"
+			android:id="@+id/association_logo"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/association_name"
+			android:layout_below="@+id/association_logo"
+			android:textStyle="bold"
+			android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/association_description"
+			android:layout_below="@+id/association_name"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/more_info_associations"
+			android:layout_below="@+id/association_description"
+			android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+			android:textStyle="bold"
+			android:textColor="@color/colorPrimary"/>
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
