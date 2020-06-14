@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
-import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -16,6 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.android.material.snackbar.Snackbar;
 import nl.vanrsmln.wilkin.hci2020.AssociationsActivity;
 import nl.vanrsmln.wilkin.hci2020.R;
+import nl.vanrsmln.wilkin.hci2020.SecurityActivity;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -51,6 +51,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 				startActivity(new Intent(getActivity(), AssociationsActivity.class));
 				break;
 			case R.id.security_button:
+				startActivity(new Intent(getActivity(), SecurityActivity.class));
+				break;
 			case R.id.navigation_button:
 				Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 				break;

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/security_cards"
+	card_view:contentPadding="4dp"
+	android:layout_margin="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:paddingRight="16dp"
+			android:id="@+id/call_image"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/contact_title"
+			android:layout_toRightOf="@+id/call_image"
+			android:textStyle="bold"
+			android:textColor="@color/colorPrimary"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/call_image"
+			android:layout_below="@id/contact_title"
+			android:id="@+id/contact_number"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
