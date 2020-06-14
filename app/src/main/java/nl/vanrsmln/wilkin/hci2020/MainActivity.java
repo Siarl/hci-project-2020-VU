@@ -1,6 +1,9 @@
 package nl.vanrsmln.wilkin.hci2020;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import androidx.cardview.widget.CardView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -24,5 +27,4 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
-
 }

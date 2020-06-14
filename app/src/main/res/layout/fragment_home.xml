@@ -141,7 +141,7 @@
 
 		</androidx.cardview.widget.CardView>
 
-		<!--androidx.cardview.widget.CardView
+		<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -150,13 +150,20 @@
 			android:layout_marginRight="16dp"
 			android:layout_marginLeft="16dp"
 			app:cardElevation="8dp"
+			android:focusable="true"
+			android:id="@+id/associations_button"
 			android:backgroundTint="@color/button_rust"
 			app:cardCornerRadius="8dp">
 
+			<TextView
+				android:padding="8dp"
+				style="@style/menu_text"
+				android:textSize="18sp"
+				android:text="@string/study_associations"/>
 
 		</androidx.cardview.widget.CardView>
 
-		<androidx.cardview.widget.CardView
+		<!--androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"

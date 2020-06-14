@@ -9,6 +9,7 @@ import android.widget.GridLayout;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -31,6 +32,13 @@ public class HomeFragment extends Fragment {
 
             }
         });
+        CardView card = root.findViewById(R.id.associations_button);
+        card.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getActivity(), AssociationsActivity.class));
+			}
+		});
         return root;
     }
 }
