@@ -1,6 +1,8 @@
 package nl.vanrsmln.wilkin.hci2020.ui.associations;
 
 import android.media.Image;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,21 +33,27 @@ public class AssociationsAdapter extends RecyclerView.Adapter<AssociationsAdapte
 		R.drawable.ic_saba_logo
 	};
 
+	private final String[] website = {
+		"<a href=\"https://storm.vu\">MORE</a>",
+		"<a href=\"https://vcsvu.nl\">MORE</a>",
+		"<a href=\"https://saba.amsterdam\"MORE</a>"
+	};
+
 	class ViewHolder extends RecyclerView.ViewHolder {
 		public int currentItem;
 		public TextView itemName;
 		public TextView itemDescription;
 		public ImageView itemLogo;
+		public TextView itemWebsite;
 
 		public ViewHolder(View itemView) {
 			super(itemView);
 			itemName = (TextView)itemView.findViewById(R.id.association_name);
 			itemDescription = (TextView)itemView.findViewById(R.id.association_description);
 			itemLogo = (ImageView)itemView.findViewById(R.id.association_logo);
-			itemView.setOnClickListener((v) -> {
-				int position = getAdapterPosition();
-				Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-			});
+			itemWebsite = (TextView)itemView.findViewById(R.id.website_link);
+
+			itemWebsite.setMovementMethod(LinkMovementMethod.getInstance());
 		}
 	}
 
@@ -62,6 +70,7 @@ public class AssociationsAdapter extends RecyclerView.Adapter<AssociationsAdapte
 		holder.itemDescription.setText(descriptions[position]);
 		holder.itemName.setText(names[position]);
 		holder.itemLogo.setImageResource(logos[position]);
+		holder.itemWebsite.setText(Html.fromHtml(website[position], Html.FROM_HTML_MODE_LEGACY));
 	}
 
 	@Override

@@ -41,10 +41,12 @@
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="@string/more_info_associations"
+			android:id="@+id/website_link"
 			android:layout_below="@+id/association_description"
 			android:textAppearance="@style/TextAppearance.AppCompat.Caption"
 			android:textStyle="bold"
+			android:paddingTop="10dp"
+			android:textSize="15sp"
 			android:textColor="@color/colorPrimary"/>
 
 	</RelativeLayout>
