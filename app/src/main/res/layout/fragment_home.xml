@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:fillViewport="true">
-
-	<GridLayout
+<GridLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
@@ -18,10 +11,11 @@
 		android:rowCount="4"
 		android:alignmentMode="alignMargins"
 		android:weightSum="10"
-		tools:context=".MainActivity">
-
-		<!--1-->
-		<androidx.cardview.widget.CardView
+		tools:context=".MainActivity"
+		android:isScrollContainer="true">
+	
+	<!--1-->
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -35,19 +29,19 @@
 			android:focusable="true"
 			app:cardCornerRadius="8dp"
 			android:backgroundTint="@color/button_yellow">
-
-			<ImageView
+		
+		<ImageView
 				style="@style/menu_icons"
 				android:src="@drawable/ic_local_dining_white_24dp"/>
-
-			<TextView
+		
+		<TextView
 				android:paddingBottom="8dp"
 				style="@style/menu_text"
 				android:text="@string/order_lunch"/>
-
-		</androidx.cardview.widget.CardView>
-
-		<androidx.cardview.widget.CardView
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -59,19 +53,19 @@
 			android:id="@+id/navigation_button"
 			android:backgroundTint="@color/button_green"
 			app:cardCornerRadius="8dp">
-
-			<ImageView
+		
+		<ImageView
 				style="@style/menu_icons"
 				android:src="@drawable/ic_place_white_24dp"/>
-
-			<TextView
+		
+		<TextView
 				android:paddingBottom="8dp"
 				style="@style/menu_text"
 				android:text="@string/menu_navigation"/>
-
-		</androidx.cardview.widget.CardView>
-
-		<androidx.cardview.widget.CardView
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -84,20 +78,20 @@
 			android:id="@+id/repair_button"
 			android:backgroundTint="@color/button_purple"
 			app:cardCornerRadius="8dp">
-
-			<ImageView
+		
+		<ImageView
 				style="@style/menu_icons"
 				android:src="@drawable/ic_build_white_24dp"/>
-
-			<TextView
+		
+		<TextView
 				android:paddingBottom="8dp"
 				style="@style/menu_text"
 				android:text="@string/menu_repairs"/>
-
-
-		</androidx.cardview.widget.CardView>
-
-		<androidx.cardview.widget.CardView
+	
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -110,20 +104,20 @@
 			android:focusable="true"
 			android:backgroundTint="@color/button_red"
 			app:cardCornerRadius="8dp">
-
-			<ImageView
+		
+		<ImageView
 				android:paddingBottom="8dp"
 				style="@style/menu_icons"
 				android:src="@drawable/ic_notifications_active_white_24dp"/>
-
-			<TextView
+		
+		<TextView
 				android:paddingBottom="8dp"
 				style="@style/menu_text"
 				android:text="@string/menu_security"/>
-
-		</androidx.cardview.widget.CardView>
-
-		<androidx.cardview.widget.CardView
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -136,20 +130,20 @@
 			android:id="@+id/schedule_button"
 			android:backgroundTint="@color/button_blue"
 			app:cardCornerRadius="8dp">
-
-			<ImageView
+		
+		<ImageView
 				android:paddingBottom="8dp"
 				style="@style/menu_icons"
 				android:src="@drawable/ic_today_white_24dp"/>
-
-			<TextView
+		
+		<TextView
 				android:paddingBottom="8dp"
 				style="@style/menu_text"
 				android:text="@string/menu_schedule"/>
-
-		</androidx.cardview.widget.CardView>
-
-		<androidx.cardview.widget.CardView
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
 			android:layout_width="0dp"
 			android:layout_height="0dp"
 			android:layout_columnWeight="1"
@@ -162,43 +156,42 @@
 			android:id="@+id/associations_button"
 			android:backgroundTint="@color/button_rust"
 			app:cardCornerRadius="8dp">
-
-			<TextView
+		
+		<TextView
 				android:padding="8dp"
 				style="@style/menu_text"
 				android:textSize="18sp"
 				android:text="@string/study_associations"/>
+	
+	</androidx.cardview.widget.CardView>
+	
+	<!--androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/button_turq"
+        app:cardCornerRadius="8dp">
 
-		</androidx.cardview.widget.CardView>
 
-		<!--androidx.cardview.widget.CardView
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:layout_columnWeight="1"
-			android:layout_rowWeight="1"
-			android:layout_marginBottom="16dp"
-			android:layout_marginRight="16dp"
-			android:layout_marginLeft="16dp"
-			app:cardElevation="8dp"
-			android:backgroundTint="@color/button_turq"
-			app:cardCornerRadius="8dp">
+    </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/button_light_rust"
+        app:cardCornerRadius="8dp">
 
-		</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView-->
+</GridLayout>
 
-		<androidx.cardview.widget.CardView
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:layout_columnWeight="1"
-			android:layout_rowWeight="1"
-			android:layout_marginBottom="16dp"
-			android:layout_marginRight="16dp"
-			android:layout_marginLeft="16dp"
-			app:cardElevation="8dp"
-			android:backgroundTint="@color/button_light_rust"
-			app:cardCornerRadius="8dp">
-
-		</androidx.cardview.widget.CardView-->
-	</GridLayout>
-
-</ScrollView>

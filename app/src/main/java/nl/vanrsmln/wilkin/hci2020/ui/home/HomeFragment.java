@@ -16,6 +16,7 @@ import com.google.android.material.snackbar.Snackbar;
 import nl.vanrsmln.wilkin.hci2020.AssociationsActivity;
 import nl.vanrsmln.wilkin.hci2020.R;
 import nl.vanrsmln.wilkin.hci2020.SecurityActivity;
+import nl.vanrsmln.wilkin.hci2020.repairs.ui.main.RepairActivity;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -41,6 +42,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         schedule.setOnClickListener(this);
         security.setOnClickListener(this);
         navigation.setOnClickListener(this);
+        repair.setOnClickListener(this);
+        lunch.setOnClickListener(this);
         return root;
     }
 
@@ -53,7 +56,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 			case R.id.security_button:
 				startActivity(new Intent(getActivity(), SecurityActivity.class));
 				break;
-			case R.id.navigation_button:
+            case R.id.repair_button:
+                startActivity(new Intent(getActivity(), RepairActivity.class));
+                break;
+			default:
 				Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 				break;
 		}
