@@ -1,11 +1,13 @@
 package nl.vanrsmln.wilkin.hci2020.ui.security;
 
+import android.content.Context;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import nl.vanrsmln.wilkin.hci2020.R;
@@ -60,6 +62,12 @@ public class SecurityAdapter  extends RecyclerView.Adapter<SecurityAdapter.ViewH
 			contactImage = itemView.findViewById(R.id.call_image);
 			contactText = itemView.findViewById(R.id.contact_title);
 			contactNumber = itemView.findViewById(R.id.contact_number);
+
+			contactImage.setOnClickListener(v -> {
+				if(getAdapterPosition() == 2) {
+					Toast.makeText(v.getContext(), "Sharing your location...", Toast.LENGTH_LONG).show();
+				}
+			});
 		}
 	}
 }
