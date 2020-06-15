@@ -48,11 +48,10 @@ public class AssociationsAdapter extends RecyclerView.Adapter<AssociationsAdapte
 
 		public ViewHolder(View itemView) {
 			super(itemView);
-			itemName = (TextView)itemView.findViewById(R.id.association_name);
-			itemDescription = (TextView)itemView.findViewById(R.id.association_description);
-			itemLogo = (ImageView)itemView.findViewById(R.id.association_logo);
-			itemWebsite = (TextView)itemView.findViewById(R.id.website_link);
-
+			itemName = itemView.findViewById(R.id.association_name);
+			itemDescription = itemView.findViewById(R.id.association_description);
+			itemLogo = itemView.findViewById(R.id.association_logo);
+			itemWebsite = itemView.findViewById(R.id.website_link);
 			itemWebsite.setMovementMethod(LinkMovementMethod.getInstance());
 		}
 	}
@@ -61,8 +60,7 @@ public class AssociationsAdapter extends RecyclerView.Adapter<AssociationsAdapte
 	@Override
 	public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 		View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.associations_cardview, parent, false);
-		ViewHolder viewHolder = new ViewHolder(v);
-		return viewHolder;
+		return new ViewHolder(v);
 	}
 
 	@Override

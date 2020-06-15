@@ -12,16 +12,22 @@ import nl.vanrsmln.wilkin.hci2020.R;
 
 public class SecurityAdapter  extends RecyclerView.Adapter<SecurityAdapter.ViewHolder> {
 
-	private int[] images = {
-		R.drawable.ic_call_red_24dp
+	private final int[] images = {
+		R.drawable.ic_call_red_24dp,
+		R.drawable.ic_call_red_24dp,
+		R.drawable.ic_notifications_active_red_24dp
 	};
 
-	private String[] contact = {
-		"CLICK TO CALL CAMPUS SECURITY"
+	private final String[] contact = {
+		"CLICK TO CALL CAMPUS SECURITY",
+		"CLICK TO CALL 112",
+		"CLICK TO CALL SOS "
 	};
 
-	private String[] numbers = {
-		"campus security phone"
+	private final String[] numbers = {
+		"campus security phone",
+		"112",
+		"Your location will be shared with the security team"
 	};
 
 	@NonNull
