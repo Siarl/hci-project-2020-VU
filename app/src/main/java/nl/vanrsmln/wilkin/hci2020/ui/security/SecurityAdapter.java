@@ -1,7 +1,10 @@
 package nl.vanrsmln.wilkin.hci2020.ui.security;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.media.Image;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,9 +66,19 @@ public class SecurityAdapter  extends RecyclerView.Adapter<SecurityAdapter.ViewH
 			contactText = itemView.findViewById(R.id.contact_title);
 			contactNumber = itemView.findViewById(R.id.contact_number);
 
-			contactImage.setOnClickListener(v -> {
+			contactNumber.setOnClickListener(v -> {
 				if(getAdapterPosition() == 2) {
-					Toast.makeText(v.getContext(), "Sharing your location...", Toast.LENGTH_LONG).show();
+					AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(v.getContext());
+					alertDialogBuilder.setMessage("Are you sure? Calling an SOS should only be done in case of dire emergencies. Anyone that is found to be calling false alarms will be reprimanded accordingly.");
+					alertDialogBuilder.setTitle("SOS");
+					alertDialogBuilder.setPositiveButton("SOS", (dialog, which) -> {
+						Toast.makeText(v.getContext(), "Sending your location....", Toast.LENGTH_LONG).show();
+					});
+					alertDialogBuilder.setNegativeButton("Cancel", (dialog, which) -> {
+						Toast.makeText(v.getContext(), "SOS Cancelled", Toast.LENGTH_SHORT).show();
+					});
+					AlertDialog alert = alertDialogBuilder.create();
+					alert.show();
 				}
 			});
 		}
