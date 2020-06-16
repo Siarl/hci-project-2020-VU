@@ -17,7 +17,7 @@ public class RepairRequestRepository {
     }
 
     private RepairRequestRepository() {
-        publicRequests = Constants.repairRequests;
+        publicRequests = Constants.PUBLIC_REPAIR_REQUESTS;
         myRequests = new ArrayList<>();
         acceptedRequests = new ArrayList<>();
         makeAcceptedRequests();

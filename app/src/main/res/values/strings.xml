@@ -32,11 +32,14 @@
 	<string name="second_fragment_label">Second Fragment</string>
 	<string name="next">Next</string>
 	<string name="previous">Previous</string>
-
+	
 	<string name="hello_first_fragment">Hello first fragment</string>
 	<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 	<string name="call_security">Call Security</string>
 	<string name="call_campus_security">Call Campus Security</string>
 	<string name="call_security_description">Click this button to call Campus Security. They will be able to track your location for an hour</string>
 	<string name="click_here_to_call">CLICK HERE TO CALL</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

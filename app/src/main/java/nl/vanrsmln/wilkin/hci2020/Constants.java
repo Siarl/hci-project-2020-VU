@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Constants {
 
-    public static final List<Building> buildings;
+    public static final List<Building> CAMPUS_BUILDINGS;
     static {
         List<Building> temp = new ArrayList<>();
 
@@ -43,64 +43,64 @@ public class Constants {
         Building b2 = new Building("WN", wings1); temp.add(b2);
         Building b3 = new Building("MF", wings1); temp.add(b3);
         
-        buildings = Collections.unmodifiableList(temp);
+        CAMPUS_BUILDINGS = Collections.unmodifiableList(temp);
     }
 
-    public static final List<RepairRequest> repairRequests;
+    public static final List<RepairRequest> PUBLIC_REPAIR_REQUESTS;
     static {
         List<RepairRequest> temp = new ArrayList<>();
 
         Random rand = new Random();
 
         temp.add(new RepairRequest(
-                buildings.get(0),
-                buildings.get(0).wings.get(0),
-                buildings.get(0).wings.get(0).rooms.get(0),
+                CAMPUS_BUILDINGS.get(0),
+                CAMPUS_BUILDINGS.get(0).wings.get(0),
+                CAMPUS_BUILDINGS.get(0).wings.get(0).rooms.get(0),
                 "Toilet doesn't flush :/",
                 RepairRequest.Status.COMPLETED,
                 "2020-5-15T09:27:37Z"
         ));
 
         temp.add(new RepairRequest(
-                buildings.get(1),
-                buildings.get(1).wings.get(1),
-                buildings.get(1).wings.get(1).rooms.get(0),
+                CAMPUS_BUILDINGS.get(1),
+                CAMPUS_BUILDINGS.get(1).wings.get(1),
+                CAMPUS_BUILDINGS.get(1).wings.get(1).rooms.get(0),
                 "Looks like someone punched a hole in the wall.",
                 RepairRequest.Status.COMPLETED,
                 "2020-5-19T09:27:37Z"
         ));
 
         temp.add(new RepairRequest(
-                buildings.get(2),
-                buildings.get(2).wings.get(0),
-                buildings.get(2).wings.get(0).rooms.get(4),
+                CAMPUS_BUILDINGS.get(2),
+                CAMPUS_BUILDINGS.get(2).wings.get(0),
+                CAMPUS_BUILDINGS.get(2).wings.get(0).rooms.get(4),
                 "Light is flickering",
                 RepairRequest.Status.COMPLETED,
                 "2020-5-23T09:27:37Z"
         ));
 
         temp.add(new RepairRequest(
-                buildings.get(0),
-                buildings.get(0).wings.get(0),
-                buildings.get(0).wings.get(0).rooms.get(7),
+                CAMPUS_BUILDINGS.get(0),
+                CAMPUS_BUILDINGS.get(0).wings.get(0),
+                CAMPUS_BUILDINGS.get(0).wings.get(0).rooms.get(7),
                 "The radiator is broken",
                 RepairRequest.Status.COMPLETED,
                 "2020-6-1T09:27:37Z"
         ));
 
         temp.add(new RepairRequest(
-                buildings.get(1),
-                buildings.get(1).wings.get(0),
-                buildings.get(1).wings.get(0).rooms.get(3),
+                CAMPUS_BUILDINGS.get(1),
+                CAMPUS_BUILDINGS.get(1).wings.get(0),
+                CAMPUS_BUILDINGS.get(1).wings.get(0).rooms.get(3),
                 "Hi, the toilet here does not flush.",
                 RepairRequest.Status.IN_PROGRESS,
                 "2020-6-6T09:27:37Z"
         ));
 
         temp.add(new RepairRequest(
-                buildings.get(0),
-                buildings.get(0).wings.get(1),
-                buildings.get(0).wings.get(1).rooms.get(4),
+                CAMPUS_BUILDINGS.get(0),
+                CAMPUS_BUILDINGS.get(0).wings.get(1),
+                CAMPUS_BUILDINGS.get(0).wings.get(1).rooms.get(4),
                 "Toilet is clogged",
                 RepairRequest.Status.IN_PROGRESS,
                 "2020-6-12T09:27:37Z"
@@ -108,7 +108,7 @@ public class Constants {
 
         Collections.sort(temp, (t1, t2) -> t2.date.compareTo(t1.date));
 
-        repairRequests = Collections.unmodifiableList(temp);
+        PUBLIC_REPAIR_REQUESTS = Collections.unmodifiableList(temp);
     }
 
 }

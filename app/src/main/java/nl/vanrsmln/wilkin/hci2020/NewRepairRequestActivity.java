@@ -4,8 +4,6 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import nl.vanrsmln.wilkin.hci2020.Constants;
-import nl.vanrsmln.wilkin.hci2020.R;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Building;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Room;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Wing;
@@ -66,7 +64,7 @@ public class NewRepairRequestActivity extends AppCompatActivity {
 
 
         spinner1 = findViewById(R.id.spinner1);
-        ArrayAdapter<Building> buildingAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Constants.buildings);
+        ArrayAdapter<Building> buildingAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Constants.CAMPUS_BUILDINGS);
         buildingAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(buildingAdapter1);
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
