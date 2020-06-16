@@ -1,6 +1,8 @@
 package nl.vanrsmln.wilkin.hci2020.models.orders;
 
-public class FoodItem {
+import java.io.Serializable;
+
+public class FoodItem implements Serializable  {
     private String name;
     private String description;
     private int price; // in cents

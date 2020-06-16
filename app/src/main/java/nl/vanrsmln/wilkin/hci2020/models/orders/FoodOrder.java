@@ -1,9 +1,11 @@
 package nl.vanrsmln.wilkin.hci2020.models.orders;
 
 import com.kofigyan.stateprogressbar.StateProgressBar;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -30,6 +32,14 @@ public class FoodOrder {
 
         public StateProgressBar.StateNumber getStateNumber() {
             return stateNumber;
+        }
+
+        public static List<String> getNames() {
+            List<String> result = new ArrayList<>();
+            for (RepairRequest.Status status : RepairRequest.Status.values()) {
+                result.add(status.getName());
+            }
+            return result;
         }
     }
 

@@ -7,13 +7,13 @@ import java.util.List;
 public class FoodStore {
     private String name;
     private Building location;
-    private String picUrl;
+    private int imgId;
     private List<FoodItem> menu;
 
-    public FoodStore(String name, Building location, String picUrl, List<FoodItem> menu) {
+    public FoodStore(String name, Building location, int imgId, List<FoodItem> menu) {
         this.name = name;
         this.location = location;
-        this.picUrl = picUrl;
+        this.imgId = imgId;
         this.menu = menu;
     }
 
@@ -25,11 +25,15 @@ public class FoodStore {
         return location;
     }
 
-    public String getPicUrl() {
-        return picUrl;
+    public int getImgId() {
+        return imgId;
     }
 
     public List<FoodItem> getMenu() {
         return menu;
+    }
+
+    public String getOpeningHours() {
+        return "09:00 - 20:00";
     }
 }

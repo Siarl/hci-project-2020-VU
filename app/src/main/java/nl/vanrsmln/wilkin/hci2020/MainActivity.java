@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.cardview.widget.CardView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.snackbar.Snackbar;
+import nl.vanrsmln.wilkin.hci2020.ui.orders.OrderView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.repair_button:
                 startActivity(new Intent(this, RepairActivity.class));
+                break;
+            case R.id.lunch_button:
+                startActivity(new Intent(this, OrderActivity.class));
                 break;
             default:
                 Snackbar.make(v, "Unavailable in this version...stay tuned!", Snackbar.LENGTH_LONG).setAction("Action", null).show();

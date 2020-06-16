@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:padding="8dp"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+        <!-- Media -->
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/image"/>
+    
+        <LinearLayout
+                android:layout_width="-1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_weight="1">
+    
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:textSize="24sp"
+                    tools:text="title"
+                    android:textColor="@android:color/primary_text_light"/>
+    
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:id="@+id/subtitle"
+                    tools:text="subtitle"
+                    android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

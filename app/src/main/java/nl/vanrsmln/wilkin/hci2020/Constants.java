@@ -129,8 +129,8 @@ public class Constants {
 
         menu.add(new FoodItem("Fruit salad", "", 125));
 
-        temp.add(new FoodStore("FoodPlaza HG", CAMPUS_BUILDINGS.get(0), "https://www.gispen.com/media/link/image/g/i/gispen_vrije_universiteit_amsterdam_k5b9453.jpg", menu));
-        temp.add(new FoodStore("M•Foodcourt", CAMPUS_BUILDINGS.get(2), "http://www.vu-horeca.nl/wp-content/uploads/2018/10/mf-restaurant.jpg", menu));
+        temp.add(new FoodStore("FoodPlaza HG", CAMPUS_BUILDINGS.get(0), R.drawable.food_store_hg, menu));
+        temp.add(new FoodStore("M•Foodcourt", CAMPUS_BUILDINGS.get(2), R.drawable.food_store_mf, menu));
 
         FOOD_STORES = Collections.unmodifiableList(temp);
     }
