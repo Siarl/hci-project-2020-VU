@@ -6,7 +6,6 @@ import android.view.View;
 import androidx.cardview.widget.CardView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.snackbar.Snackbar;
-import nl.vanrsmln.wilkin.hci2020.repairs.ui.main.RepairActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

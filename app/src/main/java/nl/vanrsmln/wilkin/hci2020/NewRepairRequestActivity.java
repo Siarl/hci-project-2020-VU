@@ -1,4 +1,4 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020;
 
 import android.view.View;
 import android.widget.*;
@@ -9,8 +9,8 @@ import nl.vanrsmln.wilkin.hci2020.R;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Building;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Room;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Wing;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequest;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequestRepository;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequestRepository;
 
 import java.util.ArrayList;
 

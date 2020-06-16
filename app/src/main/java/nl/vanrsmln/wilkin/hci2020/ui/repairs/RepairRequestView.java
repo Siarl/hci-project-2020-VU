@@ -1,4 +1,4 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020.ui.repairs;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import com.google.android.material.card.MaterialCardView;
 import com.kofigyan.stateprogressbar.StateProgressBar;
 import nl.vanrsmln.wilkin.hci2020.R;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequest;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

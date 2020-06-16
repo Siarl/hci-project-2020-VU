@@ -1,4 +1,4 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
-import nl.vanrsmln.wilkin.hci2020.R;
+import nl.vanrsmln.wilkin.hci2020.ui.repairs.RepairSectionsPagerAdapter;
 
 public class RepairActivity extends AppCompatActivity {
 

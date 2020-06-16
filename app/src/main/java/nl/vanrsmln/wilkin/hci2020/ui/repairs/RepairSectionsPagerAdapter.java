@@ -1,7 +1,6 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020.ui.repairs;
 
 import android.content.Context;
-import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
@@ -9,10 +8,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import nl.vanrsmln.wilkin.hci2020.R;
 
-/**
- * A [FragmentPagerAdapter] that returns a fragment corresponding to
- * one of the sections/tabs/pages.
- */
 public class RepairSectionsPagerAdapter extends FragmentPagerAdapter {
     private static final String TAG = "RepairSectionsPagerAdap";
 

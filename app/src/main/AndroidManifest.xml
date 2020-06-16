@@ -9,12 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".repairs.ui.main.NewRepairRequestActivity"
+        <activity android:name=".NewRepairRequestActivity"
             android:label="@string/title_activity_repair"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".repairs.ui.main.RepairActivity"
+                android:name=".RepairActivity"
                 android:label="@string/title_activity_repair"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>

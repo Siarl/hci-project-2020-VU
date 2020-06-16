@@ -1,4 +1,4 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020.ui.repairs;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import nl.vanrsmln.wilkin.hci2020.R;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequest;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequestRepository;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequestRepository;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,7 +3,7 @@ package nl.vanrsmln.wilkin.hci2020;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Building;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Room;
 import nl.vanrsmln.wilkin.hci2020.models.buildings.Wing;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequest;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
 
 import java.util.*;
 

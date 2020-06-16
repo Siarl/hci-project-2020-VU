@@ -1,4 +1,4 @@
-package nl.vanrsmln.wilkin.hci2020.repairs;
+package nl.vanrsmln.wilkin.hci2020.models.repairs;
 
 import nl.vanrsmln.wilkin.hci2020.Constants;
 

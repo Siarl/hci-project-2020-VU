@@ -1,11 +1,10 @@
-package nl.vanrsmln.wilkin.hci2020.repairs.ui.main;
+package nl.vanrsmln.wilkin.hci2020.ui.repairs;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import nl.vanrsmln.wilkin.hci2020.Constants;
-import nl.vanrsmln.wilkin.hci2020.repairs.RepairRequest;
+import nl.vanrsmln.wilkin.hci2020.models.repairs.RepairRequest;
 
 import java.util.List;
 
